@@ -1,0 +1,75 @@
+
+
+
+The implementation which passes my test suite should be accepted for the following reasons:
+
+1) Branch coverage is 100%
+
+Branch coverage = (No.of branches covered/No.of total branches) x 100
+		= (5/5) * 100 
+		= 100%
+
+In the example method given to us, my test suite has the following coverage and hits:
+
+
+
+ for (int i = 0; i < inputText.length(); i++) { // HITS: 54 (TRUE HITS : 46, FALSE HITS : 8)
+
+            if (inputText.charAt(i) == ' ') { //HITS: 46 (TRUW HITS : 26, FALSE HITS : 20)
+                if (foundSpace) {  //HITS: 26 (TRUE HITS : 14, FALSE HITS: 12)
+                    multiple = true;  //HITS : 14
+                }
+                foundSpace = true; //HITS: 26
+
+            } else {			//HITS : 20			
+                if (foundSpace && multiple) { //HITS : foundSpace (TRUE HITS : 9, FALSE HITS : 11)
+                    result++; //HITS : 7
+                }
+                foundSpace = false; //HITS: 20
+                multiple = false; //HITS : 20
+            }
+        }
+
+        return result; //HITS : 8
+
+
+As shown above, every branch the program has been hit by my test suite, hence the branch coverage is 100%.
+
+2) Empty String Test(Boundary):
+
+The test suite has tests which tests the example method by using empty string as its input. 
+The expected return value of number of contiguous spaces is 0 in this case, which the implementation has handled.
+
+3.) Single Space Testing:
+
+The tests have tested the method with input string which has single space. The expected result is 0 in this case which
+The implementation has handled.
+
+4.) Invalid Inputs Testing:
+
+Sample invalid inputs were used to test the methods of the given method. 
+My test suite expects that methods will throw unchecked exceptions when invalid inputs are given to the method.
+
+
+5.) Positive test cases:
+
+The expected behavior of the methods were tested using positive test cases.
+
+The positive test cases include when contiguous spaces were in the input string. For example, two contiguous space, three contiguous spaces.
+
+For each occurrence of contiguous space, the result should increment, which was tested.
+
+
+4.) Covered many scenarios:
+
+My test suite covers many scenarios of the methods. Representative values of each equivalence classes were tested.For example:
+
+i)Single space around characters.
+ii) Double space around characters
+iii)Contiguous spaces around characters
+iv) No space
+v) Illegal Arguments
+
+
+
+Hence, the implementation that passes my test suite should be accepted.

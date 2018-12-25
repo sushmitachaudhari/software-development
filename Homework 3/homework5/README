@@ -1,0 +1,21 @@
+README
+
+homework5 : Blackjack
+
+This project implements Blackjack game.
+
+The game is played against a dealer.
+
+1. So while making Players, an extra player(Dealer) is also considered. For instance, if there is one Dealer and one Player, the number of Players is 2.
+
+2. A play goes until, each Player takes STAND action. A player takes SPLIT action when they get a pair hand for eg: AA, 22, etc.
+
+3. A player plays according to the Strategy designed. A player takes HIT, STAND or SPLIT action based on the strategy.
+
+4. Each Player plays against the Dealer. If a player wins, the player's credits are increased by 1, else decreased by 1.
+
+
+Design Pattern: State Design Pattern : This project was designed using State Design Pattern. The totals: hard totals, soft totals and pair totals for players are the states in the game. In each state, the Player takes a decision to take an action(HIT, SPLIT, STAND) based on the total of the Player's hand and dealer's faceup card.
+
+
+

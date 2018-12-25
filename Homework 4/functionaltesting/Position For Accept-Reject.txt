@@ -1,0 +1,218 @@
+
+My position on the accept/reject for the implementation is as follows:
+The implementation that passes my test suite should be accepted for the following reasons:
+
+==============================
+despacer(String inputString)
+==============================
+
+1) Boundary Testing:
+
+In my test suite, for all the method despacer(String inputString) in TestingHomework.java interface, boundary values were tested.
+For example, empty string, single space string were given as input to this method. The expected implementation should handle this well, and not change
+anything in the input string.
+
+2.) Invalid Inputs Testing:
+
+The despacer(String inputString) was tested by giving null as the input. The expected implementation should throw an
+unchecked exception for this input. However, even if the implementation is throwing some other value which makes sense for
+example -1, the impl. should be accepted in this case.
+
+
+3.) Positive test cases:
+
+The expected behavior of the methods were tested using positive test cases. Single spaces around characters were tested.
+Multiple spaces around characters were tested. Multiple contiguos space was also tested.
+The expected behavior of the implementation should handle the multiple spaces and convert them to single space.
+
+Special characters in the input string were also tested.
+
+4.) Covered many scenarios:
+
+My test suite covers many scenarios of the methods. Representative values of each equivalence classes were tested.
+Spaces before the characters were tested, the expected implementation should not trim the single space in the start or
+end of the string.
+
+Single space in betweern characters should not be changed by the implementation.
+
+Multiple space whould be converted to single space in the implementation.
+
+All the above scenarios were tested.
+
+
+
+==============================
+factorial(int n)
+==============================
+
+1) Boundary Testing:
+
+In my test suite, for all the method factorial(int n) in TestingHomework.java interface, boundary values were tested.
+
+For example, Integer.MAX_VALUE, Integer.MIN_VALUE,Integer.MAX_VALUE -1 , Integer.MIN_VALUE +1 , -1, 0, 1 etc were
+given as input.
+
+The boundary value 12 was also tested. Anything above 12 as the input should throw exception. Values around 12 were also tested.
+
+
+2.) Invalid Inputs Testing:
+
+Sample invalid inputs were used to test the factorial method of the given interface.
+
+My tests test for an unchecked exception for the scenarios when invalid argument is passed, however even if the impl.
+returns a value that makes sense: for example, the least factorial of an integer is 1, an out put less than 1 means the argument was valid.
+The implementation may be accepted if such is the case. Either the implementation or the tests may change.
+
+Negative numbers were also given as input for this method.
+
+All the representative values for invalid inputs were tested.
+
+
+3.) Positive test cases:
+
+The expected behavior of the factorial method were tested using positive test cases. Every integer from 0 to 12 were tested for
+the expected positive outcome. (Factorial of 12 is the largest integer value in the Integer range)
+
+4.) Covered many scenarios:
+
+My test suite covers many scenarios of the methods. Representative values of each equivalence classes were tested.
+
+Boundary
+
+Positive
+
+Negative
+
+Equivalence classes
+
+Range Testing
+
+
+==================================
+simpleFunctionXplusY(int x, int y)
+==================================
+
+
+1) Boundary Testing:
+
+In my test suite, for all the simpleFunctionXplusY(int x, int y) method in TestingHomework.java interface, boundary values were tested.
+
+For simpleFunctionXplusY(int x, int y), Integer.MAX_VALUE was given as x and 1 as y, Integer.MIN_VALUE, Integer.MAX_VALUE -1, Integer.MIN_VALUE +1
+,etc was used for x and y. The expected behavior of the implementation is that it throws unchecked exception.
+
+
+Further, -1, 0, 1, and other boundary cases were tested.
+
+2.) Invalid Inputs Testing:
+
+Sample invalid inputs were used to test the methods of the given interface.
+My test suite expects that methods will throw unchecked exceptions when invalid inputs are given to the method.
+
+
+3.) Positive test cases:
+
+The expected behavior of the methods were tested using positive test cases.
+
+
+4.) Covered many scenarios:
+
+My test suite covers many scenarios of the methods. Representative values of each equivalence classes were tested.
+
+
+===========
+Sqr(int n)
+===========
+
+
+1) Boundary Testing:
+
+In my test suite, for all the Sqr(int n) method in TestingHomework.java interface, boundary values were tested.
+For example, Integer.MAX_VALUE, Integer.MIN_VALUE, etc was input for method.
+
+Further, -1, 0, 1, and other boundary cases were tested. For sqr(int n)-- integers surrounding 46340 was used to test,
+since no other squares of numbers greater than 46340 falls in the range on integer values.
+
+2.) Invalid Inputs Testing:
+
+Sample invalid inputs were used to test the methods of the given interface.
+My test suite expects that methods will throw unchecked exceptions when invalid inputs are given to the method.
+
+However, if the implementation returns a value that makes sense in this scenario, such as any number less than 0 the impl. may be accepted.
+
+Because square of any number cannot be less than 0.
+
+
+3.) Positive test cases:
+
+The expected behavior of the methods were tested using positive test cases. The representative values for each range in the postives
+were used tot est the method
+
+4.) Covered many scenarios:
+
+My test suite covers many scenarios of the methods. Representative values of each equivalence classes were tested.
+
+Boundary
+Equivalence Classes
+
+===========
+Sqrt(int n)
+===========
+
+
+1) Boundary Testing:
+
+In my test suite, for all the Sqrt(int n) method in TestingHomework.java interface, boundary values were tested.
+For example, Integer.MAX_VALUE, Integer.MIN_VALUE, etc were the input for method.
+
+Further, -1, 0, 1, and other boundary cases were tested.
+
+2.) Invalid Inputs Testing:
+
+Sample invalid inputs were used to test the methods of the given interface.
+My test suite expects that methods will throw unchecked exceptions when invalid inputs are given to the method.
+However, if the implementation returns a value that makes sense in this scenario, such as any number less than 0 the impl.
+may be accepted because sqrt of any integer cannot be negative.
+
+
+3.) Positive test cases:
+
+The expected behavior of the methods were tested using positive test cases. The representative values from each range
+were tested.
+
+4.) Covered many scenarios:
+
+My test suite covers many scenarios of the methods. Representative values of each equivalence classes were tested.
+
+===========
+SumUp(int n)
+===========
+
+1) Boundary Testing:
+
+In my test suite, for all the SumUp(int n) method in TestingHomework.java interface, boundary values were tested.
+For example, Integer.MAX_VALUE, Integer.MIN_VALUE, etc was input for method.
+
+Further, -1, 0, 1, and other boundary cases were tested. The boundary value 65535 was tested. The values around this integer value were
+tested, since sumUp of any greater number than 65535  will not fall in the range of Integer.
+
+2.) Invalid Inputs Testing:
+
+Sample invalid inputs were used to test the methods of the given interface.
+My test suite expects that methods will throw unchecked exceptions when invalid inputs are given to the method.
+
+However, if the implementation returns a value that makes sense in this scenario, such as any number less than 0 the impl.
+may be accepted because sumUp of any integer cannot be negative.
+
+Also, the contract clearly states that n is the largest addend, so my tests also chaecks if the implemetation follows the
+contract or not by passing negative numbers to the method.
+
+
+3.) Positive test cases:
+
+The expected behavior of the methods were tested using positive test cases. Various rep. values of equivalence classes
+were tested.
+
+4.) Covered many scenarios:
+
+My test suite covers many scenarios of the methods. Representative values of each equivalence classes were tested.
+

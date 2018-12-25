@@ -1,0 +1,16 @@
+CS 5500 Fall 2018
+
+Homework 1
+-----------------------------------------------------------------------------------------------------------------------
+HOW TO RUN THE PROGRAM?
+
+Step 1: Run the NumberPrinter.main() in an IDE by using the 'Run' button/command.
+Step 2: Enter the inputs in the console and get the output.
+
+-----------------------------------------------------------------------------------------------------------------------
+The program satisfies the following requirements:
+
+Requirement 1: Prints the numbers between two numbers exclusively.
+               Example input: -3, 4
+               Example output: -2-10123
+-----------------------------------------------------------------------------------------------------------------------

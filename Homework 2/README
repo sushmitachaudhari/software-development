@@ -1,0 +1,36 @@
+README for Assignment 2, MSD, Fall 2018
+
+Probelem Statement:  Implement the Class Diagram
+
+Solution: The given contract was implemented in this assignment.
+
+HOW TO RUN THE SOLUTION?
+Clone the repo. Make sure you have Maven. Run the unit tests on the program.
+
+Assumptions: 
+1. ACES has the value 1/one.
+2. While creating a game, the creator is told how many cards each hand/player will have.
+3. While creating a Vegas deck, if creator does not explicitly set the number of decks, Vegas deck with one standard deck is created, else it is created with the number of decks given by the user. 
+
+
+Creational Design Pattern:
+
+In the first version of the program i.e problem 1: Abstract Factory Pattern was used to make each type of deck.
+
+Anyone who wants to make a special deck has to call the factory to make it.
+
+
+In the second version of the program, Abstract Factory pattern, Factory Method, and Singleton method were used.
+Each special deck was made a singleton, so that only one object exists across the application.
+
+Abstract Factory method was used to create Vegas deck using a builder/factory.
+
+
+TESTS - Design:
+
+1. Sorting: While testing sorting, the String 'guidance' should be either Rank, Suit or Both(ignores cases).
+2. PullCard : The pullcard method pulls the first card and so on.
+3. Cut: The cut method cuts the deck till the cutpoint i.e if cutpoint given 5, the deck is cut 5th card and the 4 cards will go under the remaining cards.
+
+
+
