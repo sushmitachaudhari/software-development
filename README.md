@@ -12,7 +12,6 @@ State Pattern
 Iterator Pattern
 Adapter Patter
 
-
 The assignments also focused on Testing:
 Function Testing
 Structural Testing
